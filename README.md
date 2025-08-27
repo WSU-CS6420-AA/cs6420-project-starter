@@ -24,7 +24,8 @@ From inside the build folder (run `cd build` if needed), run the following comma
 
 ```
 make tester
-./tester
+./tester1
+./tester2
 ```
 
 Make sure all the test cases/assertions pass.
@@ -32,17 +33,22 @@ Make sure all the test cases/assertions pass.
 You may run a subset of the test cases by passing an argument tag.
 
 ```
-./tester [tag1]
+./tester1 [tag1]
+
+./tester2 [tag1]
 ```
 
 This will run all the test cases tagged with `[tag1]`.
 
 ## Compile and run
-From inside the build folder (run `cd build` if needed), run the following commands to compile and run your application:
+From inside the build folder (run `cd build` if needed), run the following commands to compile and run your programs:
 
 ```
-make main
-./main   
+make prog1
+./prog1  
+
+make prog2
+./prog2 
 ``` 
 
 **NOTE**: All files should be read from or written to the `resources` folder.
