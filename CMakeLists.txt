@@ -7,7 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include_directories(include)
 
 FILE(GLOB ALG_CPP src/alg_*.cpp)
-add_executable(main src/main.cpp ${ALG_CPP})
+add_executable(p1 src/part1.cpp ${ALG_CPP})
+add_executable(p2 src/part2.cpp ${ALG_CPP})
 
 Include(FetchContent)
 
@@ -19,5 +20,8 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(tester test/tester.cpp ${ALG_CPP})
-target_link_libraries(tester PRIVATE Catch2::Catch2WithMain)
+add_executable(tester1 test/tester1.cpp ${ALG_CPP})
+target_link_libraries(tester1 PRIVATE Catch2::Catch2WithMain)
+
+add_executable(tester2 test/tester2.cpp ${ALG_CPP})
+target_link_libraries(tester2 PRIVATE Catch2::Catch2WithMain)

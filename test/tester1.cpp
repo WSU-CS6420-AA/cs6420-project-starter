@@ -1,9 +1,9 @@
-#define CATCH_CONFIG_MAIN // This tells Catch2 to provide a main() function
+#define CATCH_CONFIG_MAIN // Tells Catch2 to provide a main() function
 #include <catch2/catch_all.hpp>
 
 using namespace std;
 
-// Change me or remove me to fit your application
+// Change me or remove me to appropriately test part1 of this assignment
 TEST_CASE("Test case 1 description goes here", "[tag1]")
 {
 	int x = 10;
@@ -22,13 +22,13 @@ TEST_CASE("Test case 1 description goes here", "[tag1]")
 	}
 }
 
-// Change me or remove me to fit your application
+// Change me or remove me to appropriately test part1 of this assignment
 TEST_CASE("Test case 2 description goes here", "[tag2]")
 {
 	CHECK(true);
 }
 
-// Change me or remove me to fit your application
+// Change me or remove me to appropriately test part1 of this assignment
 TEST_CASE("Test case 3 description goes here", "[tag2]")
 {
 	CHECK_FALSE(false);
