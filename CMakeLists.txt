@@ -7,8 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include_directories(include)
 
 FILE(GLOB ALG_CPP src/alg_*.cpp)
-add_executable(p1 src/part1.cpp ${ALG_CPP})
-add_executable(p2 src/part2.cpp ${ALG_CPP})
+add_executable(prog1 src/part1.cpp ${ALG_CPP})
+add_executable(prog2 src/part2.cpp ${ALG_CPP})
 
 Include(FetchContent)
 
