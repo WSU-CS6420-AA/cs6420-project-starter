@@ -19,6 +19,8 @@ cmake ..
 ```
 You only need to run these commands once.
 
+**Note:** If your `.cpp` file is in the `src/` folder and its name starts with `alg_`, it will be included automatically. Otherwise, you must add it manually to the correct `add_executable(...)` line in `CMakeLists.txt`, listing it with the other source files (space-separated). Don’t forget to re-run `cmake ..` whenever you change `CMakeLists.txt`.
+
 ## Compile and test
 From inside the build folder (run `cd build` if needed), run the following commands to compile and test your code:
 
